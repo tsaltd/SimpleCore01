@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/avant-email/module.js"></script>
+    <script src="js/avant-email/valid-email.component.js"></script>
+    <script src="js/ValidEmail/avant-app-email.js"></script>
+    <script src="js/ValidEmail/avant-controller-email.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AvantTek Email</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      One of three columns
+    </div>
+    <div class="col-md-4">
+      One of three columns
+    </div>
+    <div class="col-md-4">
+      One of three columns
+    </div>
+  </div>
+</div>
+<div class="container-fluid" ng-app="app-email">
+        <div class="row" ng-controller="emailController as vm">
+            <div class="col-md-12">
+                <div ID="emailtest" style="padding-top: 300px" class="ng-app">
+                    <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                        <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required>
+                        <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Subscribe</button>
+                        <div role="alert">
+                            <span class="error" ng-show="myForm.input.$error.required">
+                                Required!
+                            </span>
+                            <span class="error" ng-show="myForm.input.$error.email">
+                                Not valid email!
+                            </span>
+                        </div>
+                        <tt>text = {{vm.email.text}}</tt><br />
+                        <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br />
+                        <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br />
+                        <tt>myForm.$valid = {{myForm.$valid}}</tt><br />
+                        <tt>myForm.$error.required = {{!!myForm.$error.required}}</tt><br />
+                        <tt>myForm.$error.email = {{!!myForm.$error.email}}</tt><br />
+                        <div>
+                            {{email.wtf}}
+                        </div>
+
+                    </form>
+                </div>
+
+
+                </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
