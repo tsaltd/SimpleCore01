@@ -1,3 +1,14 @@
-<div>
-    <h3>{{model.message}}</h3>
+<div ID="emailtest" style="padding-top: 300px" class="ng-app">
+    <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+        <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required>
+        <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Subscribe</button>
+        <div role="alert">
+            <span class="error" ng-show="myForm.input.$error.required">
+                                Required!
+                            </span>
+            <span class="error" ng-show="myForm.input.$error.email">
+                                Not valid email!
+                            </span>
+        </div>
+    </form>
 </div>
