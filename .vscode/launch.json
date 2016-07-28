@@ -12,10 +12,25 @@
             "name": "Launch localhost with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:3000/htmlpage.html",
+            "url": "http://localhost:3000/startComponent.html",
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": true
+        
+        },
+        {   "type": "chrome",
+            "name": "StartComponent",
+            "request": "launch",
+            "url": "http://localhost:3000/startComponent.html",
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": true
+        },
+        {
+            "name": "StartComponent file",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/startComponent.html",
             "webRoot": "${workspaceRoot}",
             "sourceMaps": true
         }
-        
     ] 
 }

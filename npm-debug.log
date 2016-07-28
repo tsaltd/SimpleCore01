@@ -1,43 +1,347 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'run',
-1 verbose cli   'lite' ]
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'colors',
+1 verbose cli   'del' ]
 2 info using npm@2.15.8
 3 info using node@v4.4.7
-4 verbose run-script [ 'prelite', 'lite', 'postlite' ]
-5 info prelite Demo@1.0.0
-6 info lite Demo@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info Demo@1.0.0 Failed to exec lite script
-9 verbose stack Error: Demo@1.0.0 lite: `lite-server –port 3000`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:827:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid Demo@1.0.0
-11 verbose cwd c:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponent\wwwroot
-12 error Windows_NT 10.0.10586
-13 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "lite"
-14 error node v4.4.7
-15 error npm  v2.15.8
-16 error code ELIFECYCLE
-17 error Demo@1.0.0 lite: `lite-server –port 3000`
-17 error Exit status 1
-18 error Failed at the Demo@1.0.0 lite script 'lite-server –port 3000'.
-18 error This is most likely a problem with the Demo package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     lite-server –port 3000
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs Demo
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls Demo
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\package.json
+5 warn package.json Demo@1.0.0 No repository field.
+6 warn package.json Demo@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\lite-server\package.json
+9 verbose readDependencies loading dependencies from C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\package.json
+10 silly cache add args [ 'colors', null ]
+11 verbose cache add spec colors
+12 silly cache add args [ 'del', null ]
+13 verbose cache add spec del
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'colors',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'colors',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed colors@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for colors
+17 info addNameTag [ 'colors', 'latest' ]
+18 silly mapToRegistry name colors
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'colors',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'colors',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/colors
+23 verbose addNameTag registry:https://registry.npmjs.org/colors not in flight; fetching
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'del',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'del',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: 'latest',
+24 silly cache add   type: 'tag' }
+25 silly addNamed del@latest
+26 verbose addNamed "latest" is being treated as a dist-tag for del
+27 info addNameTag [ 'del', 'latest' ]
+28 silly mapToRegistry name del
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry data Result {
+31 silly mapToRegistry   raw: 'del',
+31 silly mapToRegistry   scope: null,
+31 silly mapToRegistry   name: 'del',
+31 silly mapToRegistry   rawSpec: '',
+31 silly mapToRegistry   spec: 'latest',
+31 silly mapToRegistry   type: 'tag' }
+32 silly mapToRegistry uri https://registry.npmjs.org/del
+33 verbose addNameTag registry:https://registry.npmjs.org/del not in flight; fetching
+34 verbose request uri https://registry.npmjs.org/colors
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 11:43:28 AM
+37 verbose request id d4852ca28a04d9af
+38 verbose etag "3POUNUB7CWPK5BKT4JR625VOU"
+39 http request GET https://registry.npmjs.org/colors
+40 verbose request uri https://registry.npmjs.org/del
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 11:43:28 AM
+43 verbose etag "2KUSY4KFQHE5TGG6HR6CNYGMV"
+44 http request GET https://registry.npmjs.org/del
+45 http 304 https://registry.npmjs.org/colors
+46 verbose headers { date: 'Thu, 28 Jul 2016 15:43:26 GMT',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   'cache-control': 'max-age=300',
+46 verbose headers   etag: '"3POUNUB7CWPK5BKT4JR625VOU"',
+46 verbose headers   age: '43',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'x-served-by': 'cache-jfk1036-JFK',
+46 verbose headers   'x-cache': 'HIT',
+46 verbose headers   'x-cache-hits': '4',
+46 verbose headers   'x-timer': 'S1469720606.136544,VS0,VE0',
+46 verbose headers   vary: 'Accept-Encoding' }
+47 silly get cb [ 304,
+47 silly get   { date: 'Thu, 28 Jul 2016 15:43:26 GMT',
+47 silly get     via: '1.1 varnish',
+47 silly get     'cache-control': 'max-age=300',
+47 silly get     etag: '"3POUNUB7CWPK5BKT4JR625VOU"',
+47 silly get     age: '43',
+47 silly get     connection: 'keep-alive',
+47 silly get     'x-served-by': 'cache-jfk1036-JFK',
+47 silly get     'x-cache': 'HIT',
+47 silly get     'x-cache-hits': '4',
+47 silly get     'x-timer': 'S1469720606.136544,VS0,VE0',
+47 silly get     vary: 'Accept-Encoding' } ]
+48 verbose etag https://registry.npmjs.org/colors from cache
+49 verbose get saving colors to C:\Users\wp710_000\AppData\Roaming\npm-cache\registry.npmjs.org\colors\.cache.json
+50 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+51 http 304 https://registry.npmjs.org/del
+52 verbose headers { date: 'Thu, 28 Jul 2016 15:43:26 GMT',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   'cache-control': 'max-age=300',
+52 verbose headers   etag: '"2KUSY4KFQHE5TGG6HR6CNYGMV"',
+52 verbose headers   age: '177',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'x-served-by': 'cache-jfk1040-JFK',
+52 verbose headers   'x-cache': 'HIT',
+52 verbose headers   'x-cache-hits': '5',
+52 verbose headers   'x-timer': 'S1469720606.145592,VS0,VE0',
+52 verbose headers   vary: 'Accept-Encoding' }
+53 silly get cb [ 304,
+53 silly get   { date: 'Thu, 28 Jul 2016 15:43:26 GMT',
+53 silly get     via: '1.1 varnish',
+53 silly get     'cache-control': 'max-age=300',
+53 silly get     etag: '"2KUSY4KFQHE5TGG6HR6CNYGMV"',
+53 silly get     age: '177',
+53 silly get     connection: 'keep-alive',
+53 silly get     'x-served-by': 'cache-jfk1040-JFK',
+53 silly get     'x-cache': 'HIT',
+53 silly get     'x-cache-hits': '5',
+53 silly get     'x-timer': 'S1469720606.145592,VS0,VE0',
+53 silly get     vary: 'Accept-Encoding' } ]
+54 verbose etag https://registry.npmjs.org/del from cache
+55 verbose get saving del to C:\Users\wp710_000\AppData\Roaming\npm-cache\registry.npmjs.org\del\.cache.json
+56 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+57 silly addNameTag next cb for del with tag latest
+58 silly addNamed del@2.2.1
+59 verbose addNamed "2.2.1" is a plain semver version for del
+60 silly addNameTag next cb for colors with tag latest
+61 silly addNamed colors@1.1.2
+62 verbose addNamed "1.1.2" is a plain semver version for colors
+63 silly cache afterAdd del@2.2.1
+64 verbose afterAdd C:\Users\wp710_000\AppData\Roaming\npm-cache\del\2.2.1\package\package.json not in flight; writing
+65 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+66 silly cache afterAdd colors@1.1.2
+67 verbose afterAdd C:\Users\wp710_000\AppData\Roaming\npm-cache\colors\1.1.2\package\package.json not in flight; writing
+68 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+69 verbose afterAdd C:\Users\wp710_000\AppData\Roaming\npm-cache\colors\1.1.2\package\package.json written
+70 verbose afterAdd C:\Users\wp710_000\AppData\Roaming\npm-cache\del\2.2.1\package\package.json written
+71 silly install resolved [ { name: 'colors',
+71 silly install resolved     description: 'get colors in your node.js console',
+71 silly install resolved     version: '1.1.2',
+71 silly install resolved     author: { name: 'Marak Squires' },
+71 silly install resolved     homepage: 'https://github.com/Marak/colors.js',
+71 silly install resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+71 silly install resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+71 silly install resolved     repository:
+71 silly install resolved      { type: 'git',
+71 silly install resolved        url: 'git+ssh://git@github.com/Marak/colors.js.git' },
+71 silly install resolved     license: 'MIT',
+71 silly install resolved     scripts: { test: 'node tests/basic-test.js && node tests/safe-test.js' },
+71 silly install resolved     engines: { node: '>=0.1.90' },
+71 silly install resolved     main: 'lib',
+71 silly install resolved     files: [ 'examples', 'lib', 'LICENSE', 'safe.js', 'themes' ],
+71 silly install resolved     gitHead: '8bf2ad9fa695dcb30b7e9fd83691b139fd6655c4',
+71 silly install resolved     _id: 'colors@1.1.2',
+71 silly install resolved     _shasum: '168a4701756b6a7f51a12ce0c97bfa28c084ed63',
+71 silly install resolved     _from: 'colors@latest',
+71 silly install resolved     _npmVersion: '2.1.8',
+71 silly install resolved     _nodeVersion: '0.11.13',
+71 silly install resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+71 silly install resolved     maintainers: [ [Object] ],
+71 silly install resolved     dist:
+71 silly install resolved      { shasum: '168a4701756b6a7f51a12ce0c97bfa28c084ed63',
+71 silly install resolved        tarball: 'https://registry.npmjs.org/colors/-/colors-1.1.2.tgz' },
+71 silly install resolved     directories: {},
+71 silly install resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-1.1.2.tgz',
+71 silly install resolved     readme: 'ERROR: No README data found!' },
+71 silly install resolved   { name: 'del',
+71 silly install resolved     version: '2.2.1',
+71 silly install resolved     description: 'Delete files and folders',
+71 silly install resolved     license: 'MIT',
+71 silly install resolved     repository:
+71 silly install resolved      { type: 'git',
+71 silly install resolved        url: 'git+https://github.com/sindresorhus/del.git' },
+71 silly install resolved     author:
+71 silly install resolved      { name: 'Sindre Sorhus',
+71 silly install resolved        email: 'sindresorhus@gmail.com',
+71 silly install resolved        url: 'sindresorhus.com' },
+71 silly install resolved     engines: { node: '>=0.10.0' },
+71 silly install resolved     scripts: { test: 'xo && ava' },
+71 silly install resolved     files: [ 'index.js' ],
+71 silly install resolved     keywords:
+71 silly install resolved      [ 'delete',
+71 silly install resolved        'del',
+71 silly install resolved        'remove',
+71 silly install resolved        'destroy',
+71 silly install resolved        'trash',
+71 silly install resolved        'unlink',
+71 silly install resolved        'clean',
+71 silly install resolved        'cleaning',
+71 silly install resolved        'cleanup',
+71 silly install resolved        'rm',
+71 silly install resolved        'rmrf',
+71 silly install resolved        'rimraf',
+71 silly install resolved        'rmdir',
+71 silly install resolved        'glob',
+71 silly install resolved        'gulpfriendly',
+71 silly install resolved        'file',
+71 silly install resolved        'files',
+71 silly install resolved        'folder',
+71 silly install resolved        'dir',
+71 silly install resolved        'directory',
+71 silly install resolved        'fs',
+71 silly install resolved        'filesystem' ],
+71 silly install resolved     dependencies:
+71 silly install resolved      { globby: '^5.0.0',
+71 silly install resolved        'is-path-cwd': '^1.0.0',
+71 silly install resolved        'is-path-in-cwd': '^1.0.0',
+71 silly install resolved        'object-assign': '^4.0.1',
+71 silly install resolved        pify: '^2.0.0',
+71 silly install resolved        'pinkie-promise': '^2.0.0',
+71 silly install resolved        rimraf: '^2.2.8' },
+71 silly install resolved     devDependencies:
+71 silly install resolved      { ava: '*',
+71 silly install resolved        'fs-extra': '^0.30.0',
+71 silly install resolved        'path-exists': '^3.0.0',
+71 silly install resolved        tempfile: '^1.1.1',
+71 silly install resolved        xo: '*' },
+71 silly install resolved     gitHead: 'd92f9d3b30aca21868239a60f639beb94dd00bf7',
+71 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/del/issues' },
+71 silly install resolved     homepage: 'https://github.com/sindresorhus/del#readme',
+71 silly install resolved     _id: 'del@2.2.1',
+71 silly install resolved     _shasum: 'f6763026472209c4f0349111c5ac280868bec4fe',
+71 silly install resolved     _from: 'del@latest',
+71 silly install resolved     _npmVersion: '2.15.0',
+71 silly install resolved     _nodeVersion: '4.4.2',
+71 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+71 silly install resolved     dist:
+71 silly install resolved      { shasum: 'f6763026472209c4f0349111c5ac280868bec4fe',
+71 silly install resolved        tarball: 'https://registry.npmjs.org/del/-/del-2.2.1.tgz' },
+71 silly install resolved     maintainers: [ [Object] ],
+71 silly install resolved     _npmOperationalInternal:
+71 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+71 silly install resolved        tmp: 'tmp/del-2.2.1.tgz_1466503710609_0.6494583815801889' },
+71 silly install resolved     directories: {},
+71 silly install resolved     _resolved: 'https://registry.npmjs.org/del/-/del-2.2.1.tgz',
+71 silly install resolved     readme: 'ERROR: No README data found!' } ]
+72 info install colors@1.1.2 into C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+73 info install del@2.2.1 into C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+74 info installOne colors@1.1.2
+75 verbose installOne of colors to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC not in flight; installing
+76 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+77 info installOne del@2.2.1
+78 verbose installOne of del to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC not in flight; installing
+79 verbose correctMkdir C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks correctMkdir already in flight; waiting
+80 verbose lock using C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks\colors-c6c8e8d1001e675f.lock for C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+81 verbose lock using C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks\del-47503080f4a7a60b.lock for C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+82 silly install write writing colors 1.1.2 to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+83 silly install write writing del 2.2.1 to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+84 verbose unbuild node_modules\colors
+85 verbose unbuild node_modules\del
+86 silly gentlyRm C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors is being purged from base C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+87 verbose gentlyRm don't care about contents; nuking C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+88 verbose tar unpack C:\Users\wp710_000\AppData\Roaming\npm-cache\colors\1.1.2\package.tgz
+89 verbose tar unpacking to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+90 silly gentlyRm C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors is being purged
+91 verbose gentlyRm don't care about contents; nuking C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+92 silly gentlyRm C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del is being purged from base C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+93 verbose gentlyRm don't care about contents; nuking C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+94 silly gunzTarPerm modes [ '777', '666' ]
+95 silly vacuum-fs purging C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+96 silly gunzTarPerm extractEntry package.json
+97 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+98 silly gunzTarPerm extractEntry LICENSE
+99 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+100 silly gunzTarPerm extractEntry safe.js
+101 silly gunzTarPerm modified mode [ 'safe.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry ReadMe.md
+103 silly gunzTarPerm modified mode [ 'ReadMe.md', 420, 438 ]
+104 silly gunzTarPerm extractEntry examples/normal-usage.js
+105 silly gunzTarPerm modified mode [ 'examples/normal-usage.js', 420, 438 ]
+106 silly vacuum-fs quitting because other entries in C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules
+107 verbose tar unpack C:\Users\wp710_000\AppData\Roaming\npm-cache\del\2.2.1\package.tgz
+108 verbose tar unpacking to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+109 silly gentlyRm C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del is being purged
+110 verbose gentlyRm don't care about contents; nuking C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+111 silly vacuum-fs Error: EPERM: operation not permitted, lstat 'C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del'
+111 silly vacuum-fs     at Error (native)
+112 verbose unlock done using C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks\del-47503080f4a7a60b.lock for C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+113 silly gunzTarPerm extractEntry examples/safe-string.js
+114 silly gunzTarPerm modified mode [ 'examples/safe-string.js', 420, 438 ]
+115 silly gunzTarPerm extractEntry lib/colors.js
+116 silly gunzTarPerm modified mode [ 'lib/colors.js', 420, 438 ]
+117 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+118 silly gunzTarPerm modified mode [ 'lib/extendStringPrototype.js', 420, 438 ]
+119 silly gunzTarPerm extractEntry lib/index.js
+120 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+121 silly gunzTarPerm extractEntry lib/styles.js
+122 silly gunzTarPerm modified mode [ 'lib/styles.js', 420, 438 ]
+123 silly gunzTarPerm extractEntry lib/custom/trap.js
+124 silly gunzTarPerm modified mode [ 'lib/custom/trap.js', 420, 438 ]
+125 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+126 silly gunzTarPerm modified mode [ 'lib/custom/zalgo.js', 420, 438 ]
+127 silly gunzTarPerm extractEntry lib/maps/america.js
+128 silly gunzTarPerm modified mode [ 'lib/maps/america.js', 420, 438 ]
+129 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+130 silly gunzTarPerm modified mode [ 'lib/maps/rainbow.js', 420, 438 ]
+131 silly gunzTarPerm extractEntry lib/maps/random.js
+132 silly gunzTarPerm modified mode [ 'lib/maps/random.js', 420, 438 ]
+133 silly gunzTarPerm extractEntry lib/maps/zebra.js
+134 silly gunzTarPerm modified mode [ 'lib/maps/zebra.js', 420, 438 ]
+135 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+136 silly gunzTarPerm modified mode [ 'lib/system/supports-colors.js', 420, 438 ]
+137 silly gunzTarPerm extractEntry themes/generic-logging.js
+138 silly gunzTarPerm modified mode [ 'themes/generic-logging.js', 420, 438 ]
+139 verbose write writing to C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors\package.json
+140 info preinstall colors@1.1.2
+141 verbose readDependencies loading dependencies from C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors\package.json
+142 verbose readDependencies loading dependencies from C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors\package.json
+143 silly install resolved []
+144 verbose about to build C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+145 info build C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+146 info linkStuff colors@1.1.2
+147 silly linkStuff colors@1.1.2 has C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules as its parent node_modules
+148 verbose linkBins colors@1.1.2
+149 verbose linkMans colors@1.1.2
+150 verbose rebuildBundles colors@1.1.2
+151 info install colors@1.1.2
+152 info postinstall colors@1.1.2
+153 verbose unlock done using C:\Users\wp710_000\AppData\Roaming\npm-cache\_locks\colors-c6c8e8d1001e675f.lock for C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\colors
+154 verbose stack Error: EPERM: operation not permitted, lstat 'C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del'
+154 verbose stack     at Error (native)
+155 verbose cwd C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+156 error Windows_NT 10.0.10586
+157 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "colors" "del"
+158 error node v4.4.7
+159 error npm  v2.15.8
+160 error path C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
+161 error code EPERM
+162 error errno -4048
+163 error syscall lstat
+164 error Error: EPERM: operation not permitted, lstat 'C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del'
+164 error     at Error (native)
+164 error  { [Error: EPERM: operation not permitted, lstat 'C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del']
+164 error   errno: -4048,
+164 error   code: 'EPERM',
+164 error   syscall: 'lstat',
+164 error   path: 'C:\\Users\\wp710_000\\OneDrive\\Dev\\Angular\\Alpha\\Templates\\SimpleComponentVC\\node_modules\\del' }
+165 error Please try running this command again as root/Administrator.
+166 verbose exit [ -4048, true ]
+167 verbose unbuild node_modules\del
+168 silly gentlyRm C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del is being purged from base C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC
+169 verbose gentlyRm don't care about contents; nuking C:\Users\wp710_000\OneDrive\Dev\Angular\Alpha\Templates\SimpleComponentVC\node_modules\del
